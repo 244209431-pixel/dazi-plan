@@ -151,10 +151,10 @@ export default function LoginPage() {
         </div>
       </form>
 
-      {/* 底部提示 */}
+      {/* 底部版权信息 */}
       <div className="relative z-10 mt-6 text-center">
         <p className="text-xs text-gray-400">
-          默认超管账号：管理员家庭 / admin123
+          © 搭子计划 · 家庭遛娃搭子社群
         </p>
       </div>
     </div>

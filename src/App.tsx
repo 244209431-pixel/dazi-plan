@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { useAuthStore, useAppStore } from '@/store'
 import LoginPage from '@/pages/LoginPage'
+import InvitePage from '@/pages/InvitePage'
 import HomePage from '@/pages/HomePage'
 import CalendarPage from '@/pages/CalendarPage'
 import ActivityDetailPage from '@/pages/ActivityDetailPage'
@@ -13,6 +14,7 @@ import AdminDashboard from '@/pages/admin/AdminDashboard'
 import FamilyManage from '@/pages/admin/FamilyManage'
 import ActivityManage from '@/pages/admin/ActivityManage'
 import ChapterManage from '@/pages/admin/ChapterManage'
+import RegistrationManage from '@/pages/admin/RegistrationManage'
 import AppLayout from '@/components/layout/AppLayout'
 
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
@@ -33,6 +35,7 @@ export default function App() {
   return (
     <Routes>
       <Route path="/login" element={<LoginPage />} />
+      <Route path="/invite" element={<InvitePage />} />
       <Route
         path="/*"
         element={

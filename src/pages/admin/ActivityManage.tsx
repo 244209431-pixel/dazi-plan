@@ -354,7 +354,7 @@ export default function ActivityManage() {
                           ? `${config.bgColor} ${config.textColor} ring-2 ring-offset-1`
                           : 'bg-gray-50 text-gray-600 hover:bg-gray-100'
                       }`}
-                      style={formCategory === cat ? { ringColor: config.textColor } : {}}
+                      style={formCategory === cat ? { '--tw-ring-color': config.textColor } as React.CSSProperties : {}}
                     >
                       <div className="text-lg">{config.emoji}</div>
                       <div className="text-xs mt-0.5">{config.label}</div>

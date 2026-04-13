@@ -39,6 +39,9 @@ export default function AdminDashboard() {
     // 出勤排行前3
     const leaderboard = calcLeaderboard(data.families, data.activities, data.checkIns).slice(0, 3)
 
+    // 待审核注册
+    const pendingRegistrations = data.registrations ? data.registrations.filter((r: any) => r.status === 'pending').length : 0
+
     return {
       totalFamilies,
       totalActivities,
@@ -51,6 +54,7 @@ export default function AdminDashboard() {
       chapterPlanned,
       categoryStats,
       leaderboard,
+      pendingRegistrations,
     }
   }, [data, activeChapter])
 
