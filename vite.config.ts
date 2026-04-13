@@ -9,5 +9,5 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  base: '/story-collector-game/',
+  base: '/dazi-plan/',
 })
